@@ -99,17 +99,17 @@ $(document).ready(function() {
 	
 	///Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$(".forms").submit(function() {
+	$("#form").submit(function() {
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
 			data: $(this).serialize()
 		}).done(function() {
 			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.magnificPopup.close();
-				$(".forms").trigger("reset");
-			}, 1000);
+			// setTimeout(function() {
+			// 	$.magnificPopup.close();
+			// 	$(".forms").trigger("reset");
+			// }, 1000);
 		});
 		return false;
 	});

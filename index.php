@@ -48,19 +48,19 @@
 					</div>
 					<div class="col-md-4">
 						<div class="callback">
-							<form class="forms">
+							<form class="forms" id="form">
 
 								<h4>Заявка:</h4>
 								<p>Оставьте заявку и мы свяжемся с вами в течение 15 минут в рабочее время с 10:00 до 18:00 c пн-пт.</p>
 
 								<label>
 									<span>Ваше имя:</span>
-									<input type="text" name="name" required="">
+									<input type="text" name="name" required="required">
 								</label>
 
 								<label>
 									<span>Ваш телефон:</span>
-									<input type="text" name="phone" required="">
+									<input type="text" name="phone" required="required">
 								</label>
 
 								<div class="button-wrap">
@@ -68,7 +68,6 @@
 								</div>
 
 								<input type="hidden" name="formname" value="Заявка с верхней формы">
-								<p>Время действия акции истекает через:</p>
 								<div class="clock"></div>
 								<div class="message"></div>
 							</form>
