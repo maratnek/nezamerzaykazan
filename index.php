@@ -68,6 +68,7 @@
 								</div>
 
 								<input type="hidden" name="formname" value="Заявка с верхней формы">
+								<p>Время действия акции истекает через:</p>
 								<div class="clock"></div>
 								<div class="message"></div>
 							</form>
